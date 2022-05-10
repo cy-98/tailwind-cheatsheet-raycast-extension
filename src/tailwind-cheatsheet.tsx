@@ -6,7 +6,7 @@ export default function Command() {
     <List>
       {Object.entries(cheatsheet).map(([title, item]) => {
         return (
-          <List.Section title={title}>
+          <List.Section key={title} title={title}>
             {Object.entries(item).map(([className, style]) => (
               <List.Item title={className} key={className} subtitle={style.desc} accessoryTitle={style.value} />
             ))}

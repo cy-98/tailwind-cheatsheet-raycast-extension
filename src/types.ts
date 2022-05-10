@@ -6,7 +6,7 @@ export enum Titles {
   Display = "display",
 
   Float = "float",
-  Clear ="clear",
+  Clear = "clear",
   Isolation = "isolation",
   ObjectFit = "object-fit",
   ObjectPosition = "object-position",
@@ -23,22 +23,17 @@ export enum Titles {
   GridColumn = "grid-column, start/end",
   GridTemplateRows = "grid-template-rows",
   GridRow = "grid-row, start/end",
-  GridAutoFlow = 'gird-auto-flow',
-  GridAutoColumns = 'grid-auto-columns',
-  GridAutoRows = 'grid-auto-rows',
-  Gap = 'gap',
+  GridAutoFlow = "gird-auto-flow",
+  GridAutoColumns = "grid-auto-columns",
+  GridAutoRows = "grid-auto-rows",
+  Gap = "gap",
 
-  Padding = 'padding',
-  Margin = 'margin',
-  SpaceBetween = 'space between',
-
-  
+  Padding = "padding",
+  Margin = "margin",
+  SpaceBetween = "space between",
 }
 
-export const spacing = [
-  0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64,
-  72, 80, 96,
-];
+export type TailwindConfig = Record<Titles, Record<string, { value: string; desc: string }>>;
 
 export const symbols = [
   { key: "auto", v: "auto" },
@@ -56,6 +51,12 @@ export const symbols = [
   { key: "3.5", v: "0.875rem", desc: "14px" },
 ];
 
+export const spacing = [
+  0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 72, 80, 96,
+];
+
 export const columns = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 export const rows = [1, 2, 3, 4, 5, 6];
 
+export const gradients = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900];
+export const colors = ["gray", "red", "yellow", "green", "blue", "indigo", "purple", "pink"]; // extra current black white
