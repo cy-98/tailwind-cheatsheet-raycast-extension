@@ -6,31 +6,31 @@ spacing.forEach((space) => {
   const positions = Tailwind[Titles.TopRightBottomLeft];
 
   positions[`inset-${space}`] = {
-    value: `top: ${space}rem; right: ${space}rem; bottom: ${space}rem; left: ${space}rem;`,
+    value: `top: ${space}rem; right: ${space}rem; bottom: ${space}rem; left: ${space}rem`,
     desc: ` ${space * 4}px `,
   };
   positions[`inset-x-${space}`] = {
-    value: `top: ${space}rem; right: ${space}rem;`,
+    value: `top: ${space}rem; right: ${space}rem`,
     desc: ` ${space * 4}px `,
   };
   positions[`inset-y-${space}`] = {
-    value: `top: ${space}rem; bottom: ${space}rem;`,
+    value: `top: ${space}rem; bottom: ${space}rem`,
     desc: ` ${space * 4}px `,
   };
   positions[`top-${space}`] = {
-    value: `top: ${space}rem;`,
+    value: `top: ${space}rem`,
     desc: ` ${space * 4}px `,
   };
   positions[`right-${space}`] = {
-    value: `right: ${space}rem;`,
+    value: `right: ${space}rem`,
     desc: ` ${space * 4}px `,
   };
   positions[`bottom-${space}`] = {
-    value: `bottom: ${space}rem;`,
+    value: `bottom: ${space}rem`,
     desc: ` ${space * 4}px `,
   };
   positions[`left-${space}`] = {
-    value: `left: ${space}rem;`,
+    value: `left: ${space}rem`,
     desc: ` ${space * 4}px `,
   };
 });
@@ -41,31 +41,31 @@ symbols.forEach((space) => {
   const positions = Tailwind[Titles.TopRightBottomLeft];
 
   positions[`inset-${key}`] = {
-    value: `top: ${v}; right: ${v}; bottom: ${v}; left: ${v};`,
+    value: `top: ${v}; right: ${v}; bottom: ${v}; left: ${v}`,
     desc,
   };
   positions[`inset-x-${key}`] = {
-    value: `top: ${v}; right: ${v};`,
+    value: `top: ${v}; right: ${v}`,
     desc,
   };
   positions[`inset-y-${key}`] = {
-    value: `top: ${v}; bottom: ${v};`,
+    value: `top: ${v}; bottom: ${v}`,
     desc,
   };
   positions[`top-${key}`] = {
-    value: `top: ${v};`,
+    value: `top: ${v}`,
     desc,
   };
   positions[`right-${key}`] = {
-    value: `right: ${v};`,
+    value: `right: ${v}`,
     desc,
   };
   positions[`bottom-${key}`] = {
-    value: `bottom: ${v};`,
+    value: `bottom: ${v}`,
     desc,
   };
   positions[`left-${key}`] = {
-    value: `left: ${v};`,
+    value: `left: ${v}`,
     desc,
   };
 });

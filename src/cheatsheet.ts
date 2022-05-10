@@ -1,8 +1,9 @@
-import { spacing, symbols, Titles, TailwindConfig } from "./types";
+import { Titles, TailwindConfig } from "./types";
 import addPaddingConfig from "./padding";
 import addPositions from "./position";
 import addGrid from './grid';
 import addMargin from './margin';
+import addOpacity from './opacity';
 
 const Tailwind: TailwindConfig = {
   [Titles.Breakpoints]: {
@@ -29,7 +30,7 @@ const Tailwind: TailwindConfig = {
   },
   [Titles.BoxDecorationBreak]: {
     "box-decoration-clone": {
-      value: `box-decoration-break: clone;`,
+      value: `box-decoration-break: clone`,
       desc: "",
     },
     "box-decoration-slice": {
@@ -40,102 +41,102 @@ const Tailwind: TailwindConfig = {
   [Titles.Container]: {
     container: {
       value: `container`,
-      desc: `sm max-width: 640px; md max-width: 768px; lg	max-width: 1024px; xl	max-width: 1280px; 2xl	max-width: 1536px;`,
+      desc: `sm max-width: 640px; md max-width: 768px; lg	max-width: 1024px; xl	max-width: 1280px; 2xl	max-width: 1536px`,
     },
   },
   [Titles.BoxSizing]: {
     "box-border": {
-      value: `box-sizing: border-box;`,
+      value: `box-sizing: border-box`,
       desc: "",
     },
     "box-content": {
-      value: `box-sizing: content-box;`,
+      value: `box-sizing: content-box`,
       desc: "",
     },
   },
   [Titles.Display]: {
     hidden: {
-      value: `display: none;`,
+      value: `display: none`,
       desc: "",
     },
     block: {
-      value: `display: block;`,
+      value: `display: block`,
       desc: "",
     },
     "inline-block": {
-      value: `display: inline-block;`,
+      value: `display: inline-block`,
       desc: "",
     },
     inline: {
-      value: `display: inline;`,
+      value: `display: inline`,
       desc: "",
     },
     flex: {
-      value: `display: flex;`,
+      value: `display: flex`,
       desc: "",
     },
     "inline-flex": {
-      value: `display: inline-flex;`,
+      value: `display: inline-flex`,
       desc: "",
     },
     table: {
-      value: `display: table;`,
+      value: `display: table`,
       desc: "",
     },
     "inline-table": {
-      value: `display: inline-table;`,
+      value: `display: inline-table`,
       desc: "",
     },
     "table-caption": {
-      value: `display: table-caption;`,
+      value: `display: table-caption`,
       desc: "",
     },
     "table-cell": {
-      value: `display: table-cell;`,
+      value: `display: table-cell`,
       desc: "",
     },
     "table-column": {
-      value: `display: table-column;`,
+      value: `display: table-column`,
       desc: "",
     },
     "table-column-group": {
-      value: `display: table-column-group;`,
+      value: `display: table-column-group`,
       desc: "",
     },
     "table-footer-group": {
-      value: `display: table-footer-group;`,
+      value: `display: table-footer-group`,
       desc: "",
     },
     "table-header-group": {
-      value: `display: table-header-group;`,
+      value: `display: table-header-group`,
       desc: "",
     },
     "table-row": {
-      value: `display: table-row;`,
+      value: `display: table-row`,
       desc: "",
     },
     "table-row-group": {
-      value: `display: table-row-group;`,
+      value: `display: table-row-group`,
       desc: "",
     },
     "flow-root": {
-      value: `display: flow-root;`,
+      value: `display: flow-root`,
       desc: "",
     },
     grid: {
-      value: `display: grid;`,
+      value: `display: grid`,
       desc: "",
     },
     "inline-grid": {
-      value: `display: inline-grid;`,
+      value: `display: inline-grid`,
       desc: "",
     },
     contents: {
-      value: `display: contents;`,
+      value: `display: contents`,
       desc: "",
     },
     "list-item": {
-      value: `display: list-item;`,
+      value: `display: list-item`,
       desc: "",
     },
   },
@@ -603,12 +604,14 @@ const Tailwind: TailwindConfig = {
       desc: "",
     },
   },
+  [Titles.Opacity] : {}
 };
 
 addPaddingConfig(Tailwind);
 addPositions(Tailwind);
 addGrid(Tailwind);
 addMargin(Tailwind);
+addOpacity(Tailwind);
 
 
 export default Tailwind;

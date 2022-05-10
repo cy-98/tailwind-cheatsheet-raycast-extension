@@ -31,6 +31,9 @@ export enum Titles {
   Padding = "padding",
   Margin = "margin",
   SpaceBetween = "space between",
+
+  Opacity = 'opacity',
+
 }
 
 export type TailwindConfig = Record<Titles, Record<string, { value: string; desc: string }>>;
@@ -60,3 +63,5 @@ export const rows = [1, 2, 3, 4, 5, 6];
 
 export const gradients = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900];
 export const colors = ["gray", "red", "yellow", "green", "blue", "indigo", "purple", "pink"]; // extra current black white
+
+export const opacity = [0, 5, 10, 20, 25, 30, 40, 50, 60, 70, 75, 80, 90, 95, 100];

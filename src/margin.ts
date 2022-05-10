@@ -3,65 +3,65 @@ export default (Tailwind: TailwindConfig) => {
   // margin
   spacing.forEach((n) => {
     Tailwind[Titles.Margin][`m-${n}`] = {
-      value: `margin: ${n}rem;`,
+      value: `margin: ${n}rem`,
       desc: ` ${n * 4}px `,
     };
     Tailwind[Titles.Margin][`-m-${n}`] = {
-      value: `margin: -${n}rem;`,
+      value: `margin: -${n}rem`,
       desc: ` -${n * 4}px `,
     };
 
     Tailwind[Titles.Margin][`mx-${n}`] = {
-      value: `margin-left: ${n}rem; margin-right: ${n}rem;`,
+      value: `margin-left: ${n}rem; margin-right: ${n}rem`,
       desc: ` ${n * 4}px `,
     };
     Tailwind[Titles.Margin][`-mx-${n}`] = {
-      value: `margin-left: -${n}rem; margin-right: -${n}rem;`,
+      value: `margin-left: -${n}rem; margin-right: -${n}rem`,
       desc: ` -${n * 4}px `,
     };
 
     Tailwind[Titles.Margin][`my-${n}`] = {
-      value: `margin-top: ${n}rem; margin-bottom: ${n}rem;`,
+      value: `margin-top: ${n}rem; margin-bottom: ${n}rem`,
       desc: ` ${n * 4}px `,
     };
     Tailwind[Titles.Margin][`-my-${n}`] = {
-      value: `margin-top: -${n}rem; margin-bottom: -${n}rem;`,
+      value: `margin-top: -${n}rem; margin-bottom: -${n}rem`,
       desc: ` -${n * 4}px `,
     };
 
     Tailwind[Titles.Margin][`mt-${n}`] = {
-      value: `margin-top: ${n}rem;`,
+      value: `margin-top: ${n}rem`,
       desc: ` ${n * 4}px `,
     };
     Tailwind[Titles.Margin][`-mt-${n}`] = {
-      value: `margin-top: -${n}rem;`,
+      value: `margin-top: -${n}rem`,
       desc: ` -${n * 4}px `,
     };
 
     Tailwind[Titles.Margin][`mb-${n}`] = {
-      value: `margin-bottom: ${n}rem;`,
+      value: `margin-bottom: ${n}rem`,
       desc: ` ${n * 4}px `,
     };
     Tailwind[Titles.Margin][`-mb-${n}`] = {
-      value: `margin-bottom: -${n}rem;`,
+      value: `margin-bottom: -${n}rem`,
       desc: ` -${n * 4}px `,
     };
 
     Tailwind[Titles.Margin][`ml-${n}`] = {
-      value: `margin-left: ${n}rem;`,
+      value: `margin-left: ${n}rem`,
       desc: ` ${n * 4}px `,
     };
     Tailwind[Titles.Margin][`-ml-${n}`] = {
-      value: `margin-left: -${n}rem;`,
+      value: `margin-left: -${n}rem`,
       desc: ` -${n * 4}px `,
     };
 
     Tailwind[Titles.Margin][`mr-${n}`] = {
-      value: `margin-right: ${n}rem;`,
+      value: `margin-right: ${n}rem`,
       desc: ` ${n * 4}px `,
     };
     Tailwind[Titles.Margin][`-mr-${n}`] = {
-      value: `margin-right: -${n}rem;`,
+      value: `margin-right: -${n}rem`,
       desc: ` -${n * 4}px `,
     };
   });
@@ -69,19 +69,19 @@ export default (Tailwind: TailwindConfig) => {
     .filter(({ desc }) => Boolean(desc))
     .forEach(({ v, desc = "", key }) => {
       Tailwind[Titles.Margin][`m-${key}`] = {
-        value: `margin: ${v};`,
+        value: `margin: ${v}`,
         desc,
       };
       Tailwind[Titles.Margin][`-m-${key}`] = {
-        value: `margin: -${v};`,
+        value: `margin: -${v}`,
         desc,
       };
       Tailwind[Titles.Margin][`-mt-${key}`] = {
-        value: `margin: -${v};`,
+        value: `margin: -${v}`,
         desc,
       };
       Tailwind[Titles.Margin][`-mb-${key}`] = {
-        value: `margin: -${v};`,
+        value: `margin: -${v}`,
         desc,
       };
     });
